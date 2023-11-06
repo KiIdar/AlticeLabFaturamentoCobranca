@@ -129,7 +129,7 @@ public class Beta1 {
         cdr.saveLog();
     }
 
-    public static boolean isNightTime(Timestamp timestamp) {
+    private static boolean isNightTime(Timestamp timestamp) {
         LocalDateTime localDateTime = timestamp.toLocalDateTime();
         LocalTime currentTime = localDateTime.toLocalTime();
 
