@@ -14,8 +14,8 @@ ALPHA1
 - All tarrif classes share the same instance of CDR so throughout the process we will prepare a CDR to save to an arrayList<CDR>. At the end we call cdr.saveLogs() to essencially "commit" the log
 - There are 3 main parts on these class
   - Eligibility -> Checks if the request is elibible or not
-  - rating -> calculates the price per unit based on criteria and returns the total price for that request
-  - charging -> will charge on the specified bucket dipending on the criteria. If the bucket doesn't have enough, it returns a "CreditLimitReached" error on the ChargingReply
+  - Rating -> calculates the price per unit based on criteria and returns the total price for that request
+  - Charging -> will charge on the specified bucket depending on the criteria. If the bucket doesn't have enough, it returns a "CreditLimitReached" error on the ChargingReply
 - Returns a ChargingReply back to the BillingAccount and back to Main
 
 #####################################################################################################################################################################################################################
