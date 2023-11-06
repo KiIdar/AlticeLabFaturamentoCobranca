@@ -34,7 +34,7 @@ EXTRA
 - Alpha 2 and Beta 2 have a condition of: if bucketB > 10 then not eligible........ But on the rating it showed a discount of: if bucketB > 15 than discount by -0.05. I don't know if this was intentional or not but based on the first condition, doesn't it mean the second one is impossible to happend?
 - Wasn't sure how you wanted to handle CreditLimitReached situations so I just made it abort the entire process instead of trying to charge what it could and returning that.
 
-#Tests
+# Tests
 - Kept trying to provide wrong input during the preparation part of a ChargingReply. This included negative values / null inputs / characters when numbers were expected
 - Mostly tested Alpha1 with diferent RSU to check if the correct bucket was charged and for the right amount. During the implementation of a test class, I also tested it for a weekend and it trigered as expected. Since most tarrifs are similar with minor changes, didn't test to much the others
 
